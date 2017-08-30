@@ -70,3 +70,7 @@ body {
 .letter-button-row1 {
 	margin-bottom: 20px;
 }
+
+#letters {
+	white-space: pre;
+}
