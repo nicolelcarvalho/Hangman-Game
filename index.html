@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ARRGGGHH Hangman</title>
+	<title>Walk the Plank Hangman</title>
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
@@ -10,7 +10,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -20,16 +19,14 @@
 		<div class="background">
 				
 			<img src="assets/images/hangman_background_forweb.png" width="100%">
-				
 			<div class= "counter">
-			  <p>Wins: <span id="wins"></span></p>
-			  <p>Losses: <span id="losses"></span></p>
-			  <p>Correct Guesses: <span id="correctGuess"></span></p>
-			  <p>Steps Until Death: <span id="remainingSteps"></span></p>
-				<p>Letters Guessed: <span id="lettersGuessed"></span></p>
+			  <p><strong>Wins: </strong><span id="wins"></span></p>
+			  <p><strong>Losses: </strong><span id="losses"></span></p>
+			  <p><strong>Steps Until Death: </strong><span id="remainingSteps"></span></p>
+			  <p><strong>Letters Guessed: </strong><br><span id="lettersGuessed"></span></p>
 			</div>
 
-			  <ul id="letters"></ul>
+			<ul id="letters"></ul>
 			
 			<div id="figures">
 				<img id="pirate" src="assets/images/pirate.png">
@@ -38,43 +35,8 @@
 		</div>
 	</div>
 </div>
-	<!-- 
-	<div class="row">
-		<div id="keyboard" class="col-md-12">
-       	<div class="letter-button letter-button-row1">A</div>
-        <div class="letter-button letter-button-row1">B</div>
-        <div class="letter-button letter-button-row1">C</div>
-        <div class="letter-button letter-button-row1">D</div>
-        <div class="letter-button letter-button-row1">E</div>
-        <div class="letter-button letter-button-row1">F</div>
-        <div class="letter-button letter-button-row1">G</div>
-        <div class="letter-button letter-button-row1">H</div>
-        <div class="letter-button letter-button-row1">I</div>
-        <div class="letter-button letter-button-row1">J</div>
-        <div class="letter-button letter-button-row1">K</div>
-        <div class="letter-button letter-button-row1">L</div>
-        <div class="letter-button letter-button-row1">M</div>
-        <div class="letter-button letter-button-row1">N</div>
-        <div class="letter-button letter-button-row1">O</div>
-        <div class="letter-button letter-button-row1">P</div>
-        <div class="letter-button letter-button-row1">Q</div>
-        <div class="letter-button letter-button-row1">R</div>
-        <div class="letter-button letter-button-row1">S</div>
-        <div class="letter-button letter-button-row1">T</div>
-        <div class="letter-button letter-button-row1">U</div>
-        <div class="letter-button letter-button-row1">V</div>
-        <div class="letter-button letter-button-row1">W</div>
-        <div class="letter-button letter-button-row1">X</div>
-        <div class="letter-button letter-button-row1">Y</div>
-        <div class="letter-button letter-button-row1">Z</div>
-	 	</div>
-	</div>
- -->
 
-
-
-</div>
-
+<script src="assets/javascript/game.js"></script>
 
 </body>
 </html>
