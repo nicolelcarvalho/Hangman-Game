@@ -4,6 +4,10 @@
 
 Created during Week 2 of Rutgers Coding Bootcamp. The challenge was to create a hangman game that runs in the browser and features dynamically updated HTML powered by JavaScript. 
 
+## Demonstration
+
+![hangmandemo](assets/images/hangmanDemo.gif)
+
 ## Utilizing the App
 
 * View the app: [Github Pages Project Link](https://nicolelcarvalho.github.io/Hangman-Game/)
@@ -15,6 +19,7 @@ Created during Week 2 of Rutgers Coding Bootcamp. The challenge was to create a 
 * If the player is incorrect, the pirate and captain take a step on the plank. The player is alotted 9 steps on the plank.
 * The incorrect letter that was guessed is also appended to the screen under "Letters Guessed" to let the player know what they have already guessed. 
 * If the player guesses all of the letters before their 9 steps are used, they get a win and the game resets displaying a new word. If not, they get a loss and the game resets displaying a new word. 
+
 ## Tech used
 - HTML
 - CSS
