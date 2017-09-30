@@ -1,13 +1,15 @@
 // Create global variables
 var wins = 1;
 var losses = 1;
+var remainingSteps = 10;
+
 var userGuess;
 var letters = [];
 var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var string;
+
 // Create an array of phrases to be guessed.
 var phrase = ["SHIPWRECK", "CANNONBALL", "PEGLEG", "CAPTAIN", "CROSSBONES", "CARRIBEAN", "BLACKBEARD", "SWORD", "MATEY", "PARROT", "SCURVY", "AHOY"];
-var remainingSteps = 10;
 // Create an array of incorrect letters guessed to be able to write them to the screen.
 var lettersGuessed = [];
 var incorrectGuess = document.getElementById("lettersGuessed");
@@ -107,6 +109,7 @@ var currentPhrase = phrase[Math.floor(Math.random() * phrase.length)];
       	}
 
       } // Ends if statement from line 78.
+      
 		// Once the word is complete, wins increases by 1.
 		// All counters reset except for wins and losses. 
       	if(letters.indexOf("_") === -1) {
